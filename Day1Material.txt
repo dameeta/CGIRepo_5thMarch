@@ -1,0 +1,223 @@
+Java
+=======================
+A,==>Interpreter based lang
+B,==> Interpreter based lang
+Interpreter python,javascript 
+c,cpp---> Compiler based +
+=====================================
+
+Java
+variable,data type,
+arrays,
+methods
+oops
+class
+object
+features
+================
+advanced feature of jdk 1.8
+
+gc
+garbage collector in java
+the object which allocates memory and not in use the gc will
+deallocate the memory from program.so the program execution 
+gets faster.
+========================================================
+
+constructor						method
+1. is like method but doesnt return value			1. method is returning value.
+2.when constructor gets called we get instance of a class               2. We get any data/value as return
+3.constructor are named as class name				3.method names can be anything
+4.when ever objects get created constructor gets called		4.method can be called via objects or directly 							if static methods are there.
+5. We can have multiple constructor in the class but with different
+parameters
+6.the use of constructor is for initializing class attributes with
+different values.
+=============================================================================
+Ex1.
+public class Hi {
+
+
+    public static void main(String[] args) {
+    int x=10;
+    int y=9;
+        System.out.println("Hello Java!!");
+        System.out.println(x+y);
+        String myname="Manisha ";
+        System.out.println( "Hello "+ myname);
+        //primitive data types
+        //int,short,long,char,float,double,byte,,boolean
+        short var= 9889;
+long population=989088343444L;
+char option='Y';
+boolean ans=true;
+float salary=7899.8998f;
+double avg=93849384983.908989898d;
+        System.out.println(avg);
+}}
+==============================================================
+Ex2.
+class C{
+
+}
+    public class A {
+     public static void main(String[] args) {
+
+   B bobj=new B();
+   bobj.Bmethod();
+         System.out.println("Inside A main()");
+     }
+
+}
+ class B {
+    public void Bmethod() {
+
+        System.out.println("inside B method");
+    }
+
+
+}
+=====================================================================
+Ex3
+import java.util.Scanner;
+
+class me1{
+
+    public void me1Method()
+    {
+        System.out.println("Inside me1Method");
+
+    }
+}
+class me2{
+
+    public int me2Method(int x,int y)
+    {
+        System.out.println("Inside ");
+        return x*y;
+    }
+    public int Add(int a,int b)
+    {
+
+        return a+b;
+    }
+}
+
+
+public class MethodDemos {
+    public static void main(String[] args) {
+
+
+        me1 mobj1 = new me1();
+        mobj1.me1Method();
+me2 obj2=new me2();
+int z=obj2.me2Method(6,7);
+        System.out.println(z);
+        System.out.println("The multiplication "+ obj2.me2Method(2,3));
+        System.out.println("===============================================================================");
+        System.out.println("Enter the two values ");
+        Scanner sc=new Scanner(System.in);
+      int val1=sc.nextInt();
+      int val2=sc.nextInt();
+
+        System.out.println(obj2.Add(val1,val2));
+
+    }
+}
+============================================================================
+Ex4
+
+class  Employee{
+    int id =1010;
+    String name="Sunit";
+    double salary=89988;
+
+//constructor
+    public Employee()
+    {
+        System.out.println("Default Constructor...");
+
+    }
+
+    public Employee(int i, String n)
+    {
+       id=i;
+      name=n;
+        System.out.println("id is "+ i + "The name is" + n);
+
+    }
+    public Employee( String n,int i)
+    {
+        id=i;
+        name=n;
+        System.out.println("id is "+ i + "The name is" + n);
+
+    }
+
+    //method
+    public void getEmployees()
+    {
+        id=34;
+        System.out.println(id);
+        System.out.println(name);
+        System.out.println(salary);
+    }
+}
+
+public class ConstructorDemo {
+
+    public static void main(String[] args) {
+
+        Employee e1 = new Employee();
+        Employee e2=new Employee(33,"Sushant");
+        Employee e3=new Employee("Disha", 789);
+
+    }
+}
+===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
